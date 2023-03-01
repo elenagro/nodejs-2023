@@ -1,0 +1,47 @@
+[
+  {
+    "ime": "John Doe",
+    "grad": "New York",
+    "prosek": 8.9
+  },
+  {
+    "ime": "Bella Doe",
+    "grad": "New York",
+    "prosek": 9.5
+  },
+  {
+    "ime": "Brian Higins",
+    "grad": "Orlando",
+    "prosek": 7.9
+  },
+  {
+    "ime": "Peter Gregory",
+    "grad": "Los Angeles",
+    "prosek": 7.3
+  },
+  {
+    "ime": "Ivonne Johnson",
+    "grad": "New Jersey",
+    "prosek": 10.0
+  },
+  {
+    "ime": "Maria Hanna",
+    "grad": "Boston",
+    "prosek": 6.4
+  },
+  {
+    "ime": "Danica Danevska",
+    "grad": "Los Angeles",
+    "prosek": 7.8
+  },
+  {
+    "ime": "Vaia Coln",
+    "grad": "Skopje",
+    "prosek": 8.4
+  },
+  {
+    "ime": "Mauuu Hannajs",
+    "grad": "Toronto",
+    "prosek": 7.9
+  }
+]
