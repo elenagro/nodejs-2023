@@ -41,7 +41,7 @@ const fileRead = (filename) => {
 
     console.log(prosek);
     console.log(sortIme);
-/*
+
     let najnizokProsek = prosek[prosek.length - 1];
     let najvisokProsek = prosek[0];
 
@@ -55,14 +55,10 @@ const fileRead = (filename) => {
     let citiesWithTotalAverage = {};
 
     for (let s of studenti) {
-        if(!cities[s.grad]) {
-
-        }
+      if (!cities[s.grad]) {
+      }
     }
-
-
   } catch (err) {
     console.log(err);
   }
 })();
-*/

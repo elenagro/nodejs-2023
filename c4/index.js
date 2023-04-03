@@ -74,14 +74,14 @@ const fileWrite = (filename, data) => {
 
 // console.log("daaa");
 
-// const fileRead = (filename) => {
-//   return new Promise((success, fail) => {
-//     fs.readFile(filename, "utf8", (err, data) => {
-//       if (err) return fail(err);
-//       return success(data);
-//     });
-//   });
-// };
+const fileRead = (filename) => {
+  return new Promise((success, fail) => {
+    fs.readFile(filename, "utf8", (err, data) => {
+      if (err) return fail(err);
+      return success(data);
+    });
+  });
+};
 
 // fileRead(path.join(__dirname, "test", "boi2.txt"))
 //   .then((data) => {
@@ -100,3 +100,24 @@ const fileWrite = (filename, data) => {
 //         console.log(err);
 //     }
 //   })
+
+let imenik = [
+  { name: "Zlate Zlatevski", tel: 555666 },
+  { name: "Pero Perovski", tel: 656423 },
+  { name: "Marko Markovski", tel: 456232 },
+];
+
+(async () => {
+  try {
+    let imenikData = JSON.stringify(imenik); //convert object to string
+    console.log(imenikData);
+    await fileWrite(path.join(__dirname, "test1", "imenik.txt"), imenikData);
+    let dataString = await fileRead(
+      path.join(__dirname, "test1", "imenik.txt")
+    );
+    let data = JSON.parse(dataString); // convert string to object
+    console.log(data);
+  } catch (err) {
+    console.log(err);
+  }
+})();
